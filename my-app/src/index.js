@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Square from './components/square';
+//import Square from './components/square';
 
 {/*class Square extends React.Component {    
     render() {
@@ -21,7 +21,7 @@ import Square from './components/square';
 //    );
 //}
   
-class Board extends React.Component {
+{/*class Board extends React.Component {
     renderSquare(i) {
       return (
         <Square value={this.props.squares[i]}
@@ -145,13 +145,13 @@ function calculateWinner(squares) {
     }
     return null;
 }
-
+*/}
 
   
   // ========================================
   
   ReactDOM.render(
-    <Game />,
+    //<Game />,
     document.getElementById('root')
   );
   
