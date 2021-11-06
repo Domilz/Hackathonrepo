@@ -24,14 +24,20 @@ function randomAnswer(){
         case 5:
             answer_5();
             break;
+        case 6:
+            answer_6();
+            break;
+        case 7:
+            answer_7();
+            break;
         default:
             break;
     }
 }
 
 function random(){
-    // Returns random int between 1 and 5
-    return Math.floor(Math.random() * 5) + 1;
+    // Returns random int between 1 and 7
+    return Math.floor(Math.random() * 7) + 1;
 }
 
 function answer_1(){
@@ -61,23 +67,14 @@ function answer_5(){
     document.getElementById('image').src = "./img/chicken5.jpeg";
 }
 
+function answer_6(){
+    document.getElementById('answer').innerHTML = 'Just beak-cause it could.';
+    document.getElementById('image').src = "./img/chicken6.webp";
+}
+
+function answer_7(){
+    document.getElementById('answer').innerHTML = 'To *bock* traffic.';
+    document.getElementById('image').src = "./img/chicken7.png";
+}
 
 
-
-window.addEventListener('keydown', (e) =>{
-  const { style } = block;
-  switch(e.key){
-    case 'ArrowLeft':
-      chicken.style.left = parseInt(chicken.left) - moveBy + 'px';
-      break;
-    case 'ArrowRight':
-      chicken.style.left = parseInt(chicken.left) + moveBy + 'px';
-      break;
-    case 'ArrowUp':
-      chicken.style.left = parseInt(chicken.top) - moveBy + 'px';
-      break;
-    case 'ArrowDown':
-      chicken.style.left = parseInt(chicken.top) + moveBy + 'px';
-      break;
-  }
-});
